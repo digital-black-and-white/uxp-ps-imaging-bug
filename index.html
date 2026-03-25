@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+<div style="display: flex; flex-direction: row; padding: 10px;">
+    <img
+        id="img-preview"
+        style="border: 1px solid var(--uxp-host-widget-hover-border-color); background: #000000; width: 602px; height: 602px;"
+        alt="Preview Image"
+        src="/images/blank.png"
+    >
+</div>
+<div style="display: flex; flex-direction: row; padding: 10px; padding-top: 0; align-items: center;">
+    <sp-action-button id="btn-get-pixels-1" style="margin: 2px 4px;">Get Pixels (1200 x 1200)</sp-action-button>
+    <sp-action-button id="btn-get-pixels-2" style="margin: 2px 4px;">Get Pixels (1201 x 1201)</sp-action-button>
+    <sp-action-button id="btn-reset" style="margin: 2px 4px;">Reset</sp-action-button>
+</div>
+<div style="display: flex; flex-direction: row; padding: 10px; padding-top: 0; align-items: center;">
+    <sp-textarea readonly id="txt-info" style="flex: 1; height: 150px; margin: 0;">
+        <sp-label slot="label">Information / Status / Details:</sp-label>
+    </sp-textarea>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
