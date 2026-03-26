@@ -21,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function (_event) {
   elResetButton.addEventListener('click', OnResetButtonClick);
   elGetPixels1Button.addEventListener('click', OnGetPixels1ButtonClick);
   elGetPixels2Button.addEventListener('click', OnGetPixels2ButtonClick);
-
-  // elPreviewImage.addEventListener('error', (event) => {
-  //   console.dir(event);
-  // });
-
 });
 
 async function OnResetButtonClick() {
@@ -110,8 +105,6 @@ async function GetPreview(
     await psCore.executeAsModal(async () => {
 
       await DeleteWorkPath();
-
-      // await SetSelection(sourceLeft, sourceTop, sourceWidth, sourceHeight);
       await MakeRectangle(sourceLeft, sourceTop, sourceWidth, sourceHeight);
 
       const sourceBounds = {
